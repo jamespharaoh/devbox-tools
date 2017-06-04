@@ -238,4 +238,20 @@ function vm_unpack {
 
 }
 
+function vm_ssh {
+
+	heading "Connect to devbox via SSH"
+
+	mount_secrets
+
+	subheading "Create shell"
+
+	blank-line-auto
+
+	$SSH -t bash -l
+
+	blank-line-force
+
+}
+
 # ex: noet ts=4 filetype=bash
